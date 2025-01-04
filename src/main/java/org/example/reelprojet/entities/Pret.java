@@ -10,7 +10,7 @@ public class Pret {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long numero;
   @OneToOne
- private Livre livre;
+  private Livre livre;
   private LocalDate date;
 
   @JoinColumn(name = "adherent")// adherent au lieu de  adherent_numero

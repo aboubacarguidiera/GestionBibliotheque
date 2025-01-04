@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 public class Adherent {
   @Id
   @GeneratedValue (strategy = GenerationType.IDENTITY)
-  private Long numero;
+  private Integer numero;
   private String nom;
   private String prenom;
   //@OneToOne(mappedBy = "adherent")
@@ -89,11 +89,11 @@ public class Adherent {
     return prets.remove(index);
   }
 
-  public Long getNumero() {
+  public Integer getNumero() {
     return numero;
   }
 
-  public void setNumero(Long numero) {
+  public void setNumero(Integer numero) {
     this.numero = numero;
   }
 

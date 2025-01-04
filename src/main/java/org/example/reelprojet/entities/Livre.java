@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Livre {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private Long numero;
+  private Integer numero;
   private String titre;
   private String auteur;
   @Column(unique=false, nullable = false)
@@ -21,6 +21,10 @@ public class Livre {
 
   public Livre() {
 
+  }
+
+  public Integer getNumero() {
+    return numero;
   }
 
   public String getTitre() {
